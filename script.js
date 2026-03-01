@@ -57,6 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if(targetId === '#') return;
             
             const targetElement = document.querySelector(targetId);
+            if(!targetElement) return;
+            
             const navHeight = document.querySelector('.navbar').offsetHeight;
             const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
 
