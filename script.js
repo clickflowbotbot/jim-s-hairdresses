@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             if(targetId === '#') return;
+            if(targetId.startsWith('http')) return; // Allow external links to work
             
             const targetElement = document.querySelector(targetId);
             if(!targetElement) return;

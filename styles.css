@@ -5,6 +5,7 @@
     --light: #f9f9f9;
     --white: #ffffff;
     --dark: #121212;
+    --booksy: #000000;
     --transition: all 0.3s ease;
 }
 
@@ -55,6 +56,30 @@ h1, h2, h3, .logo {
 .btn-primary:hover {
     background: #b8962d;
     transform: translateY(-2px);
+}
+
+.btn-booksy {
+    background: var(--booksy);
+    color: var(--white);
+}
+
+.btn-booksy:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+.btn-booksy-nav {
+    background: var(--booksy);
+    color: var(--white) !important;
+    padding: 8px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-booksy-nav:hover {
+    background: #333;
 }
 
 .btn-secondary {
@@ -296,6 +321,11 @@ h1, h2, h3, .logo {
     margin-bottom: 20px;
 }
 
+.about-btns {
+    display: flex;
+    gap: 15px;
+}
+
 /* Testimonials */
 .testimonials {
     padding: 100px 0;
@@ -443,6 +473,10 @@ h1, h2, h3, .logo {
     }
 
     .hero-btns {
+        flex-direction: column;
+    }
+
+    .about-btns {
         flex-direction: column;
     }
 
