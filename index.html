@@ -10,21 +10,23 @@
     <meta property="og:image" content="images/hero.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=9d4043c3">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=19d55c72">
 </head>
 <body>
 
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">Jim&apos;s Hairdressers</a>
+            <a href="#" class="logo">Jim&apos;s <span class="text-primary">Hairdressers</span></a>
             <div class="nav-links" id="navLinks">
                 <a href="#home">Home</a>
                 <a href="#services">Services</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
-                <a href="https://booksy.com" class="btn-booksy-nav">Book Now</a>
-                <a href="tel:+61457588671" class="nav-tel">Call +61457588671</a>
+                <div class="nav-actions">
+                    <a href="tel:+61457588671" class="nav-tel">+61 457 588 671</a>
+                    <a href="https://booksy.com" class="btn-booksy-nav">Book Now</a>
+                </div>
             </div>
             <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
                 <span></span>
@@ -38,11 +40,12 @@
         <img src="images/hero.png" alt="Jim&apos;s Hairdressers Interior" class="hero-bg">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
+            <span class="hero-subtitle">Excellence in Haircare</span>
             <h1>Premium Styling &amp; Precision Cuts in Perth</h1>
-            <p>Elevate your look with Perth&apos;s most trusted stylist. Personalized service tailored to your unique style.</p>
+            <p>Elevate your look with Perth&apos;s most trusted stylist. Personalized service tailored to your unique style and hair health.</p>
             <div class="hero-btns">
                 <a href="https://booksy.com" class="btn btn-primary">Book Online</a>
-                <a href="tel:+61457588671" class="btn btn-outline-white">Call to Book</a>
+                <a href="tel:+61457588671" class="btn btn-outline-dark">Call to Book</a>
             </div>
         </div>
     </header>
@@ -71,8 +74,9 @@
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
+                <span class="subtitle">What We Do</span>
                 <h2>Our Services</h2>
-                <p>Expert hair solutions for every occasion, from maintenance to complete transformations.</p>
+                <p>Expert hair solutions for every occasion, from high-precision maintenance to complete style transformations.</p>
             </div>
             <div class="services-grid">
                 <div class="service-card fade-in">
@@ -81,7 +85,7 @@
                     </div>
                     <div class="service-info">
                         <h3>Precision Cutting</h3>
-                        <p>Bespoke hairtcuts tailored to your face shape and lifestyle. Includes consultation and wash.</p>
+                        <p>Bespoke haircuts tailored to your face shape and lifestyle. Includes a full consultation and luxury wash.</p>
                     </div>
                 </div>
                 <div class="service-card fade-in">
@@ -90,7 +94,7 @@
                     </div>
                     <div class="service-info">
                         <h3>Expert Coloring</h3>
-                        <p>From subtle highlights to bold transformations using premium, hair-healthy pigments.</p>
+                        <p>From subtle sun-kissed highlights to bold architectural transformations using premium pigments.</p>
                     </div>
                 </div>
                 <div class="service-card fade-in">
@@ -99,7 +103,7 @@
                     </div>
                     <div class="service-info">
                         <h3>Special Occasions</h3>
-                        <p>Look your best for weddings, events, or a night out with our signature styling services.</p>
+                        <p>Look your best for weddings, events, or a night out with our signature high-definition styling services.</p>
                     </div>
                 </div>
             </div>
@@ -108,8 +112,12 @@
 
     <section id="about" class="about">
         <div class="container about-grid">
-            <div class="about-image fade-in">
-                <img src="images/about.png" alt="Jim at Work">
+            <div class="about-image-container fade-in">
+                <img src="images/about.png" alt="Jim at Work" class="about-main-img">
+                <div class="experience-badge">
+                    <span class="badge-num">15</span>
+                    <span class="badge-text">Years of Artistry</span>
+                </div>
             </div>
             <div class="about-text fade-in">
                 <span class="subtitle">Meet the Owner</span>
@@ -118,7 +126,7 @@
                 <p>We don&apos;t just cut hair; we analyze your hair health and style preferences to ensure you walk out the door feeling like the best version of yourself.</p>
                 <div class="about-btns">
                     <a href="https://booksy.com" class="btn btn-primary">Book via Booksy</a>
-                    <a href="tel:+61457588671" class="btn btn-outline-primary">Give Us a Call</a>
+                    <a href="tel:+61457588671" class="btn btn-outline-dark">Give Us a Call</a>
                 </div>
             </div>
         </div>
@@ -126,7 +134,8 @@
 
     <section class="testimonials">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header inverse">
+                <span class="subtitle lw">Client Reviews</span>
                 <h2>What Our Clients Say</h2>
             </div>
             <div class="testimonials-grid">
@@ -145,12 +154,16 @@
     </section>
 
     <section class="cta-banner">
-        <div class="container cta-content">
-            <h2>Ready to Transform Your Look?</h2>
-            <p>Schedule your visit today. Jim is ready to help you achieve your hair goals.</p>
-            <div class="cta-actions">
-                <a href="https://booksy.com" class="btn btn-primary">Book via Booksy</a>
-                <a href="tel:+61457588671" class="btn btn-outline-white">Call Now</a>
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2>Ready to Transform Your Look?</h2>
+                    <p>Schedule your visit today. Jim is ready to help you achieve your unique hair goals.</p>
+                    <div class="cta-actions">
+                        <a href="https://booksy.com" class="btn btn-primary btn-lg">Book via Booksy</a>
+                        <a href="tel:+61457588671" class="btn btn-outline-white btn-lg">Call Now</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -159,12 +172,12 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <h3>Jim&apos;s Hairdressers</h3>
-                    <p>Premium hair services in the heart of Perth, WA.</p>
+                    <h3>Jim&apos;s <span class="text-primary">Hairdressers</span></h3>
+                    <p>Premium hair services in the heart of Perth, WA. Committed to precision and individual style.</p>
                 </div>
                 <div class="footer-contact">
                     <h4>Contact Info</h4>
-                    <p>Phone: <a href="tel:+61457588671">+61457588671</a></p>
+                    <p>Phone: <a href="tel:+61457588671">+61 457 588 671</a></p>
                     <p>Location: Perth, Western Australia</p>
                     <p>Email: <a href="mailto:hello@jimshairdressers.com.au">hello@jimshairdressers.com.au</a></p>
                 </div>
@@ -181,6 +194,6 @@
         </div>
     </footer>
 
-    <script src="script.js?v=9d4043c3"></script>
+    <script src="script.js?v=19d55c72"></script>
 </body>
 </html>
