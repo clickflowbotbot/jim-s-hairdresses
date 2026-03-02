@@ -56,9 +56,11 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             nav.style.padding = '15px 0';
-            nav.style.boxShadow = '0 10px 30px rgba(0,0,0,0.05)';
+            nav.style.background = 'rgba(10, 10, 10, 0.98)';
+            nav.style.boxShadow = '0 10px 30px rgba(0,0,0,0.5)';
         } else {
             nav.style.padding = '24px 0';
+            nav.style.background = 'rgba(18, 18, 18, 0.95)';
             nav.style.boxShadow = 'none';
         }
     });
